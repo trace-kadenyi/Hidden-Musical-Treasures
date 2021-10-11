@@ -1,0 +1,372 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.the-logo {
+    width: 150px;
+    height: 150px;
+}
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2% 6%; 
+}
+.header {
+    background-image: url("./images/home-background-image.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+}
+.nav-links {
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-links ul li a {
+    color:white;
+    text-decoration: none;
+    
+}
+.page-footer {
+    height: 4rem;
+    background: black;
+    color: white;    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    word-spacing: 5px;
+}
+.footer-logo {
+    color:purple;
+}
+.page-footer a {
+    color: purple;
+    text-decoration: none;
+
+}
+.page-footer a:hover {
+    color: chocolate;
+}
+
+.nav-links ul li::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: chocolate;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.nav-links ul li:hover::after {
+    width: 100%;
+}
+.text-box {
+    text-align: center;
+    color:burlywood;
+    line-height: 30px;
+    margin-top: 120px;
+}
+.text-box a {
+    color: chocolate;
+    text-decoration: none;
+    
+}
+.text-box a:hover {
+    color: gold;
+}
+
+
+/*************
+About Page
+*************/
+.header-about {
+    background-image: url("./images/about-background.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+}
+
+.about-main-text {
+    text-align: center;
+    justify-content: center;
+    line-height: 30px;
+    font-weight:900;
+    font-style: italic;
+    font-size: 1.1em;
+    
+}
+.about-header {
+    color: darkorange;
+    
+}
+.about-content {
+    text-align: center;
+    color: burlywood;
+    font-size: medium;
+    
+}
+.more-about {
+    color: burlywood;
+    margin-top: 30px;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+@media screen and (min-width: 576px) {
+    .about-content {
+       font-size: 17px;
+     
+    }
+    .more-about {
+        font-size: 20px;
+    }
+}
+@media screen and (min-width: 992px) {
+    .about-content {
+       font-size: 20px;
+    }
+    .more-about {
+        font-size: 23px;
+    }
+    
+}
+@media screen and (min-width: 1200px) {
+    .about-content {
+        width: 600px;
+        padding-left: 350px;
+        font-size: 1em;
+    }
+    
+}
+/**************
+Music page
+**************/
+
+.music-image {
+    height: 200px;
+    width: 200px;
+    margin-bottom: 5px;
+}
+.music-text {
+    color: darkkhaki;
+    /* margin-left: 40px; */
+}
+.header-music {
+    background-image: url("./images/music-background.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+}
+.music-tags {
+    display: grid;
+    gap: 2rem 1rem;
+    padding-bottom: 3rem;
+    justify-content: center; 
+    
+}
+.music-text::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background:chocolate;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.music-text:hover::after {
+    width: 100%;
+}
+.music-genre {
+    text-decoration: none;
+}
+
+@media screen and (min-width: 576px) {
+    .music-tags {
+        grid-template-columns: 1fr 1fr;
+        margin-left: 100px;
+    }
+    
+}
+
+/***************
+Reflective Page
+***************/
+
+.header-reflect {
+    background-image: url("./images/reflect-background.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+   
+    
+}
+.heading {
+    color:goldenrod;
+    text-align: center;
+}
+.intro-text {
+    color: gold;
+    text-align: center;
+    /* width: 700px;
+    padding-left: 300px; */
+}
+.reflect-music {
+    line-height: 30px;
+    font-weight:900;
+    font-style: italic;
+    font-size: 1.1em;
+
+}
+
+
+.song-link {
+    text-decoration: none;
+    color: chocolate;
+    display: block;
+    
+    
+}
+/* .song-title {
+    text-align: center;
+    padding-bottom: 3rem;
+    color: chocolate;
+} */
+/* .music-container {
+    display: grid;
+    gap: 2rem 1rem;
+} */
+
+.music-list {
+    display: grid;
+    gap: 2rem 1rem;
+    padding-bottom: 3rem;
+    
+}
+.song-title::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: chocolate;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.song-title:hover::after {
+    width: 100%;
+}
+
+/* .tag-link {
+    color: red;
+    font-weight: bold;
+    text-decoration: none;
+    padding-right: 2rem;
+    
+
+   
+}
+.tags-list {
+    text-align: center;
+    padding-top: 1cm;
+    margin-bottom: 3rem;
+} */
+
+.music-image {
+    
+    height: 15rem;
+    border-radius: 3rem;
+    margin-bottom: 1rem;
+    margin-left: 3rem;
+
+}
+
+
+.song-link p {
+    margin-bottom: 0;
+    line-height: 1;
+    color: chocolate;
+    margin-left: 4rem;
+}
+ 
+  
+  
+
+@media screen and (min-width: 576px) {
+    /* .tag-link {
+        padding-right: 7rem;
+    } */
+
+    .music-list {
+        grid-template-columns: 1fr 1fr;
+    }
+    .music-image {
+        /* margin-left: 10rem;
+        margin-right: 15rem; */
+        height: 10rem;
+    }
+    /* .song-title {
+        margin-left: 11rem;
+    } */
+
+
+}
+
+@media screen and (min-width: 992px) {
+    /* .tag-link {
+        padding-right: 7rem;
+    } */
+
+    .music-list {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .music-image {
+        margin-left: 3rem;
+        margin-right: 3rem;
+    }
+    .song-title {
+        margin-left: 3rem;
+    }
+
+
+}
+
+@media screen and (min-width: 1200px) {
+    /* .tag-link {
+        padding-right: 7rem;
+    } */
+
+    .music-list {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    .music-image {
+        margin-left: 3em;
+        margin-right: 3rem;
+        
+    }
+    .song-title {
+        margin-left: 4rem;
+    }
+
+
+}
+
+
+

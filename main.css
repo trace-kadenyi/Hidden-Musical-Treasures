@@ -28,7 +28,7 @@ nav {
 .nav-links ul li {
     list-style: none;
     display: inline-block;
-    padding: 8px 12px;
+    padding: 3px 3px;
     position: relative;
 }
 .nav-links ul li a {
@@ -85,6 +85,11 @@ nav {
     color: gold;
 }
 
+@media screen and (min-width: 576px) {
+    .nav-links ul li {
+        padding: 8px 12px;
+    }
+}
 
 /*************
 About Page
@@ -293,7 +298,7 @@ Reflective Page
 }
 .tags-list a {
     text-transform: capitalize;
-    display: block;
+    /* display: block; */
     color: chocolate;
     transition: cubic-bezier(0.075, 0.82, 0.165, 1);
     text-decoration: none;
@@ -303,27 +308,14 @@ Reflective Page
     color: greenyellow;
 }
 
-/* .tag-link {
-    color: red;
-    font-weight: bold;
-    text-decoration: none;
-    padding-right: 2rem;
-    
 
-   
-}
-.tags-list {
-    text-align: center;
-    padding-top: 1cm;
-    margin-bottom: 3rem;
-} */
 
 .music-image {
     
     height: 15rem;
     border-radius: 3rem;
     margin-bottom: 1rem;
-    margin-left: 3rem;
+    margin-left: 9rem;
 
 }
 
@@ -332,7 +324,7 @@ Reflective Page
     margin-bottom: 0;
     line-height: 1;
     color: chocolate;
-    margin-left: 4rem;
+    margin-left: 10rem;
 }
  
   
@@ -347,13 +339,12 @@ Reflective Page
         grid-template-columns: 1fr 1fr;
     }
     .music-image {
-        /* margin-left: 10rem;
-        margin-right: 15rem; */
+        margin-left: 3rem;
         height: 10rem;
     }
-    /* .song-title {
-        margin-left: 11rem;
-    } */
+    .song-link p {
+        margin-left: 4rem;
+    }
 
 
 }

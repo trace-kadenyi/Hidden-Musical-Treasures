@@ -240,7 +240,7 @@ Reflective Page
 .song-link {
     text-decoration: none;
     color: chocolate;
-    display: block;
+    /* display: block; */
     
     
 }
@@ -272,6 +272,35 @@ Reflective Page
 
 .song-title:hover::after {
     width: 100%;
+}
+
+.tags-container {
+    order: 1;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 3rem;
+    padding-left: 3rem;
+}
+.tags-container h4 {
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    color: rgb(197, 160, 133);
+    font-size: 20px;
+}
+.tags-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.tags-list a {
+    text-transform: capitalize;
+    display: block;
+    color: chocolate;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+    text-decoration: none;
+    font-size: 15px;
+}
+.tags-list a:hover {
+    color: greenyellow;
 }
 
 /* .tag-link {
@@ -343,6 +372,16 @@ Reflective Page
     }
     .song-title {
         margin-left: 3rem;
+    }
+    .tags-container {
+        order: 0;
+
+    }
+    .tags-list {
+        grid-template-columns: 1fr;
+    }
+    .tags-list a {
+        font-size: 17px;
     }
 
 

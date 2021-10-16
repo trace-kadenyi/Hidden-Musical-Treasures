@@ -14,13 +14,14 @@ nav {
     padding: 2% 6%; 
 }
 .header {
-    background-image: url("./images/home-background-image.jpg");
+    background-image: url("./images/main-page/home-background-image.jpg");
     background-repeat: no-repeat;
     background-size: 100% 100%;
     position: relative;
     min-height: 100vh;
     width: 100%;
 }
+
 .nav-links {
     flex: 1;
     text-align: right;
@@ -95,7 +96,7 @@ nav {
 About Page
 *************/
 .header-about {
-    background-image: url("./images/about-background.jpg");
+    background-image: url("./images/main-page/about-background.jpg");
     background-repeat: no-repeat;
     background-size: 100% 100%;
     position: relative;
@@ -162,13 +163,13 @@ Music page
     height: 200px;
     width: 200px;
     margin-bottom: 5px;
+    
 }
 .music-text {
     color: darkkhaki;
-    /* margin-left: 40px; */
 }
 .header-music {
-    background-image: url("./images/music-background.jpg");
+    background-image: url("./images/main-page/music-background.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -213,7 +214,7 @@ Reflective Page
 ***************/
 
 .header-reflect {
-    background-image: url("./images/reflect-background.jpg");
+    background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("./images/music/reflect-background.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -224,14 +225,16 @@ Reflective Page
     
 }
 .heading {
-    color:goldenrod;
+    color:gold;
     text-align: center;
+    font-weight: 700;
 }
 .intro-text {
-    color: gold;
+    color: pink;
     text-align: center;
-    /* width: 700px;
-    padding-left: 300px; */
+    font-weight: bolder;
+    font-size: large;
+    
 }
 .reflect-music {
     line-height: 30px;
@@ -245,19 +248,10 @@ Reflective Page
 .song-link {
     text-decoration: none;
     color: chocolate;
-    /* display: block; */
     
     
 }
-/* .song-title {
-    text-align: center;
-    padding-bottom: 3rem;
-    color: chocolate;
-} */
-/* .music-container {
-    display: grid;
-    gap: 2rem 1rem;
-} */
+
 
 .music-list {
     display: grid;
@@ -279,6 +273,7 @@ Reflective Page
     width: 100%;
 }
 
+
 .tags-container {
     order: 1;
     display: flex;
@@ -288,24 +283,29 @@ Reflective Page
 }
 .tags-container h4 {
     margin-bottom: 0.5rem;
-    font-weight: bold;
-    color: rgb(197, 160, 133);
+    font-weight: bolder;
+    color:rgb(110, 49, 27);
     font-size: 20px;
+    font-style:italic;
+    text-decoration: underline;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-top: 2rem;
 }
 .tags-list {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+   
 }
 .tags-list a {
     text-transform: capitalize;
-    /* display: block; */
-    color: chocolate;
+    color: rgb(181, 204, 223);
     transition: cubic-bezier(0.075, 0.82, 0.165, 1);
     text-decoration: none;
     font-size: 15px;
+    font-weight: bold;
 }
 .tags-list a:hover {
-    color: greenyellow;
+    color: chocolate;
 }
 
 
@@ -325,16 +325,13 @@ Reflective Page
     line-height: 1;
     color: chocolate;
     margin-left: 10rem;
+    font-weight: bold;
 }
  
   
   
 
 @media screen and (min-width: 576px) {
-    /* .tag-link {
-        padding-right: 7rem;
-    } */
-
     .music-list {
         grid-template-columns: 1fr 1fr;
     }
@@ -350,10 +347,7 @@ Reflective Page
 }
 
 @media screen and (min-width: 992px) {
-    /* .tag-link {
-        padding-right: 7rem;
-    } */
-
+    
     .music-list {
         grid-template-columns: 1fr 1fr 1fr;
     }
@@ -369,7 +363,7 @@ Reflective Page
 
     }
     .tags-list {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
     }
     .tags-list a {
         font-size: 17px;
@@ -379,10 +373,7 @@ Reflective Page
 }
 
 @media screen and (min-width: 1200px) {
-    /* .tag-link {
-        padding-right: 7rem;
-    } */
-
+   
     .music-list {
         grid-template-columns: 1fr 1fr 1fr 1fr;
     }
@@ -399,4 +390,301 @@ Reflective Page
 }
 
 
+/*************
+Spiritual Page
+*************/
 
+.header-spiritual {
+    background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ),url("./images/music/spiritual-background.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+}
+.spiritual-music {
+    line-height: 30px;
+    font-weight:900;
+    font-style: italic;
+    font-size: 1.1em;
+}
+.spiritual-music h3 {
+    color: rgb(233, 121, 121);
+    font-weight: bolder;
+    
+}
+.spiritual-music .intro-text {
+    color:wheat;
+}
+.header-spiritual h4 {
+    color: rgb(110, 98, 25);
+}
+.header-spiritual .tags-list a {
+    color: rgb(216, 206, 152);
+}
+.header-spiritual .tags-list a:hover {
+    color: gold;
+}
+
+
+/***************
+Mawkish Page
+***************/
+
+.header-mawkish {
+    background-image: url("./images/music/mawkish-background.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+}
+.mawkish-music {
+    line-height: 30px;
+    font-weight:900;
+    font-style: italic;
+    font-size: 1.1em;
+}
+.mawkish-music h3 {
+    color: pink;
+    
+}
+.mawkish-music .intro-text {
+    color:lightsalmon;
+}
+.header-mawkish h4 {
+    color: chocolate;
+}
+.header-mawkish .tags-list a {
+    color: rgb(214, 177, 150);
+}
+.header-mawkish .tags-list a:hover {
+    color: goldenrod;
+}
+.header-mawkish .song-link p {
+    color: pink;
+}
+
+
+/***************
+Relax Page
+***************/
+
+.header-relax {
+    background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("./images/music/relax-background.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+}
+.relax-music {
+    line-height: 30px;
+    font-weight:900;
+    font-style: italic;
+    font-size: 1.1em;
+}
+.relax-music h3 {
+    color: greenyellow;
+    
+}
+.relax-music .intro-text {
+    color:rgb(175, 201, 136);
+}
+.header-relax h4 {
+    color: rgb(207, 207, 87);
+}
+.header-relax .tags-list a {
+    color: burlywood;
+}
+.header-relax .tags-list a:hover {
+    color: yellowgreen;
+}
+
+.header-relax .song-link p {
+    color:rgb(179, 211, 132);
+}
+
+/***************
+Feel-Good Page
+***************/
+
+.header-happy {
+    background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("./images/music/happy-background.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+}
+.happy-music {
+    line-height: 30px;
+    font-weight:900;
+    font-style: italic;
+    font-size: 1.1em;
+}
+.happy-music h3 {
+    color: rgb(221, 171, 96);
+    
+}
+.happy-music .intro-text {
+    color:rgb(224, 198, 202);
+}
+.header-happy h4 {
+    color:  rgb(221, 171, 96);
+}
+.header-happy .tags-list a {
+    color:rgb(180, 160, 134);
+}
+.header-happy .tags-list a:hover {
+    color: chocolate;
+}
+
+.header-happy .song-link p {
+    color: rgb(224, 198, 202);
+    font-weight: bolder;
+}
+
+
+/***************
+Sad Page
+***************/
+
+.header-sad {
+    background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("./images/music/sad-background.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+}
+.sad-music {
+    line-height: 30px;
+    font-weight:900;
+    font-style: italic;
+    font-size: 1.1em;
+}
+.sad-music h3 {
+    color: rgb(221, 171, 96);
+    
+}
+.sad-music .intro-text {
+    color:rgb(224, 198, 202);
+}
+.header-sad h4 {
+    color:  rgb(221, 171, 96);
+}
+.header-sad .tags-list a {
+    color:rgb(180, 160, 134);
+}
+.header-sad .tags-list a:hover {
+    color: chocolate;
+}
+
+.header-sad .song-link p {
+    color: chocolate;
+    font-weight: bolder;
+}
+
+
+
+/***************
+Deep Page
+***************/
+
+
+.header-deep {
+    background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("./images/music/deep-background.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+}
+.deep-music {
+    line-height: 30px;
+    font-weight:900;
+    font-style: italic;
+    font-size: 1.1em;
+}
+.deep-music h3 {
+    color: rgb(160, 211, 66);
+    
+}
+.deep-music .intro-text {
+    color:rgb(198, 224, 204);
+}
+.header-deep h4 {
+    color: rgb(165, 219, 84);
+}
+.header-deep .tags-list a {
+    color:rgb(140, 231, 161);
+}
+.header-deep .tags-list a:hover {
+    color: rgb(30, 198, 210);
+}
+
+.header-deep .song-link p {
+    color: rgb(64, 200, 235);
+    font-weight: bolder;
+}
+
+.header-deep .song-title::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: rgb(221, 221, 236);
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.header-deep .song-title:hover::after {
+    width: 100%;
+}
+/***************
+Hopeful Page
+***************/
+
+.header-hopeful {
+    background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("./images/music/hopeful-background.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+}
+.hopeful-music {
+    line-height: 30px;
+    font-weight:900;
+    font-style: italic;
+    font-size: 1.1em;
+}
+.hopeful-music h3 {
+    color: goldenrod;
+    
+}
+.hopeful-music .intro-text {
+    color:rgb(216, 197, 92);
+}
+.header-hopeful h4 {
+    color: rgb(228, 207, 92);
+}
+.header-hopeful .tags-list a {
+    color: yellowgreen;
+}
+.header-hopeful .tags-list a:hover {
+    color: burlywood;
+}
+
+.header-hopeful .song-link p {
+    color: burlywood;
+    font-weight: bolder;
+}

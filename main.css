@@ -281,8 +281,18 @@ Reflective Page
     padding-bottom: 3rem;
     padding-left: 3rem;
 }
-.tags-container h4 {
+/* .tags-container h4 {
     margin-bottom: 0.5rem;
+    font-weight: bolder;
+    color:rgb(110, 49, 27);
+    font-size: 20px;
+    font-style:italic;
+    text-decoration: underline;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-top: 2rem;
+} */
+.heading-four {
+    /* margin-bottom: 0.5rem; */
     font-weight: bolder;
     color:rgb(110, 49, 27);
     font-size: 20px;
@@ -417,7 +427,7 @@ Spiritual Page
 .spiritual-music .intro-text {
     color:wheat;
 }
-.header-spiritual h4 {
+.header-spiritual .heading-four {
     color: rgb(110, 98, 25);
 }
 .header-spiritual .tags-list a {
@@ -454,7 +464,7 @@ Mawkish Page
 .mawkish-music .intro-text {
     color:lightsalmon;
 }
-.header-mawkish h4 {
+.header-mawkish .heading-four {
     color: chocolate;
 }
 .header-mawkish .tags-list a {
@@ -494,7 +504,7 @@ Relax Page
 .relax-music .intro-text {
     color:rgb(175, 201, 136);
 }
-.header-relax h4 {
+.header-relax .heading-four {
     color: rgb(207, 207, 87);
 }
 .header-relax .tags-list a {
@@ -534,7 +544,7 @@ Feel-Good Page
 .happy-music .intro-text {
     color:rgb(224, 198, 202);
 }
-.header-happy h4 {
+.header-happy .heading-four {
     color:  rgb(221, 171, 96);
 }
 .header-happy .tags-list a {
@@ -576,7 +586,7 @@ Sad Page
 .sad-music .intro-text {
     color:rgb(224, 198, 202);
 }
-.header-sad h4 {
+.header-sad .heading-four {
     color:  rgb(221, 171, 96);
 }
 .header-sad .tags-list a {
@@ -620,7 +630,7 @@ Deep Page
 .deep-music .intro-text {
     color:rgb(198, 224, 204);
 }
-.header-deep h4 {
+.header-deep .heading-four {
     color: rgb(165, 219, 84);
 }
 .header-deep .tags-list a {
@@ -674,7 +684,7 @@ Hopeful Page
 .hopeful-music .intro-text {
     color:rgb(216, 197, 92);
 }
-.header-hopeful h4 {
+.header-hopeful .heading-four {
     color: rgb(228, 207, 92);
 }
 .header-hopeful .tags-list a {

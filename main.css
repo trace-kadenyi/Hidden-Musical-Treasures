@@ -4,8 +4,8 @@
 }
 
 .the-logo {
-    width: 150px;
-    height: 150px;
+    width: 50px;
+    height: 50px;
 }
 nav {
     display: flex;
@@ -14,7 +14,7 @@ nav {
     padding: 2% 6%; 
 }
 .header {
-    background-image: url("./images/main-page/home-background-image.jpg");
+    background-image: url("./images/home-background-image.jpg");
     background-repeat: no-repeat;
     background-size: 100% 100%;
     position: relative;
@@ -96,7 +96,7 @@ nav {
 About Page
 *************/
 .header-about {
-    background-image: url("./images/main-page/about-background.jpg");
+    background-image: url("./images/about-background.jpg");
     background-repeat: no-repeat;
     background-size: 100% 100%;
     position: relative;
@@ -169,7 +169,7 @@ Music page
     color: darkkhaki;
 }
 .header-music {
-    background-image: url("./images/main-page/music-background.jpg");
+    background-image: url("./images/music-background.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -214,7 +214,7 @@ Reflective Page
 ***************/
 
 .header-reflect {
-    background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("./images/music/reflect-background.jpg");
+    background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("./images/reflect-background.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -406,7 +406,7 @@ Spiritual Page
 *************/
 
 .header-spiritual {
-    background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ),url("./images/music/spiritual-background.jpg");
+    background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ),url("./images/spiritual-background.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -444,7 +444,7 @@ Mawkish Page
 ***************/
 
 .header-mawkish {
-    background-image: url("./images/music/mawkish-background.jpg");
+    background-image: url("./images/mawkish-background.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -484,7 +484,7 @@ Relax Page
 ***************/
 
 .header-relax {
-    background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("./images/music/relax-background.jpg");
+    background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("./images/relax-background.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -524,7 +524,7 @@ Feel-Good Page
 ***************/
 
 .header-happy {
-    background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("./images/music/happy-background.jpg");
+    background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("./images/happy-background.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -566,7 +566,7 @@ Sad Page
 ***************/
 
 .header-sad {
-    background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("./images/music/sad-background.jpg");
+    background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("./images/sad-background.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -610,7 +610,7 @@ Deep Page
 
 
 .header-deep {
-    background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("./images/music/deep-background.jpg");
+    background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("./images/deep-background.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -664,7 +664,7 @@ Hopeful Page
 ***************/
 
 .header-hopeful {
-    background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("./images/music/hopeful-background.jpg");
+    background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("./images/hopeful-background.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;

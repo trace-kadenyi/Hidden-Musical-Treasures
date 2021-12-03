@@ -281,18 +281,8 @@ Reflective Page
     padding-bottom: 3rem;
     padding-left: 3rem;
 }
-/* .tags-container h4 {
-    margin-bottom: 0.5rem;
-    font-weight: bolder;
-    color:rgb(110, 49, 27);
-    font-size: 20px;
-    font-style:italic;
-    text-decoration: underline;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    margin-top: 2rem;
-} */
+
 .heading-four {
-    /* margin-bottom: 0.5rem; */
     font-weight: bolder;
     color:rgb(110, 49, 27);
     font-size: 20px;

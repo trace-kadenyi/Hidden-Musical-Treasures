@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .the-logo {
@@ -72,15 +73,24 @@ nav {
     width: 100%;
 }
 .text-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
     text-align: center;
     color:burlywood;
     line-height: 30px;
     margin-top: 120px;
+    padding: 10px;
+}
+.text-box h1 {
+    font-size: 2rem;
+    letter-spacing: 0.15rem;
 }
 .text-box a {
     color: chocolate;
-    text-decoration: none;
-    
+    text-decoration: none; 
 }
 .text-box a:hover {
     color: gold;
@@ -105,8 +115,11 @@ About Page
 }
 
 .about-main-text {
-    text-align: center;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
+    padding: 10px;
     line-height: 30px;
     font-weight:900;
     font-style: italic;
@@ -115,9 +128,11 @@ About Page
 }
 .about-header {
     color: darkorange;
-    
+    text-align: center;
 }
 .about-content {
+    width: 60%;
+    margin: auto;
     text-align: center;
     color: burlywood;
     font-size: medium;
@@ -126,35 +141,11 @@ About Page
 .more-about {
     color: burlywood;
     margin-top: 30px;
+    text-align: center;
     font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-@media screen and (min-width: 576px) {
-    .about-content {
-       font-size: 17px;
-     
-    }
-    .more-about {
-        font-size: 20px;
-    }
-}
-@media screen and (min-width: 992px) {
-    .about-content {
-       font-size: 20px;
-    }
-    .more-about {
-        font-size: 23px;
-    }
-    
-}
-@media screen and (min-width: 1200px) {
-    .about-content {
-        width: 600px;
-        padding-left: 350px;
-        font-size: 1em;
-    }
-    
-}
+
 /**************
 Music page
 **************/
@@ -163,10 +154,15 @@ Music page
     height: 200px;
     width: 200px;
     margin-bottom: 5px;
-    
+    border-radius: 3rem; 
+}
+.music-image-spec {
+    display: flex;
+    margin: auto;
 }
 .music-text {
     color: darkkhaki;
+    margin-top: 15px;
 }
 .header-music {
     background-image: url("./images/music-background.jpg");
@@ -178,12 +174,20 @@ Music page
     width: 100%;
 }
 .music-tags {
-    display: grid;
-    gap: 2rem 1rem;
-    padding-bottom: 3rem;
-    justify-content: center; 
-    
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 20px;
+  gap: 5rem;    
 }
+.music-tags > * {
+    margin-left: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
 .music-text::after {
     content: '';
     width: 0%;
@@ -201,10 +205,20 @@ Music page
     text-decoration: none;
 }
 
-@media screen and (min-width: 576px) {
+@media screen and (max-width: 600px) {
     .music-tags {
-        grid-template-columns: 1fr 1fr;
-        margin-left: 100px;
+        display: flex;
+        flex-direction: column;  
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+    }
+    .music-text {
+        text-align: center;
+    }
+    .music-image {
+        display: flex;
+        margin: auto;
     }
     
 }
@@ -234,6 +248,7 @@ Reflective Page
     text-align: center;
     font-weight: bolder;
     font-size: large;
+    padding: 0 20px;
     
 }
 .reflect-music {
@@ -252,12 +267,20 @@ Reflective Page
     
 }
 
-
 .music-list {
     display: grid;
     gap: 2rem 1rem;
-    padding-bottom: 3rem;
-    
+    padding: 3rem;
+}
+.music-list > * {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.song-title {
+    margin-top: 10px;
+    text-align: center;
 }
 .song-title::after {
     content: '';
@@ -309,54 +332,22 @@ Reflective Page
 }
 
 
-
-.music-image {
-    
-    height: 15rem;
-    border-radius: 3rem;
-    margin-bottom: 1rem;
-    margin-left: 9rem;
-
-}
-
-
 .song-link p {
     margin-bottom: 0;
     line-height: 1;
     color: chocolate;
-    margin-left: 10rem;
     font-weight: bold;
 }
- 
-  
-  
 
 @media screen and (min-width: 576px) {
     .music-list {
         grid-template-columns: 1fr 1fr;
     }
-    .music-image {
-        margin-left: 3rem;
-        height: 10rem;
-    }
-    .song-link p {
-        margin-left: 4rem;
-    }
-
-
 }
 
 @media screen and (min-width: 992px) {
-    
     .music-list {
         grid-template-columns: 1fr 1fr 1fr;
-    }
-    .music-image {
-        margin-left: 3rem;
-        margin-right: 3rem;
-    }
-    .song-title {
-        margin-left: 3rem;
     }
     .tags-container {
         order: 0;
@@ -377,17 +368,6 @@ Reflective Page
     .music-list {
         grid-template-columns: 1fr 1fr 1fr 1fr;
     }
-    .music-image {
-        margin-left: 3em;
-        margin-right: 3rem;
-        
-    }
-    .song-title {
-        margin-left: 4rem;
-        margin-right: 0.5rem;
-    }
-
-
 }
 
 
@@ -702,7 +682,11 @@ Contact Page
     width: 100%;
 }
 .text-box-contact {
-    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
     text-align: center;
     color:burlywood;
     line-height: 50px;
